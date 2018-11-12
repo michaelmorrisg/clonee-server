@@ -51,3 +51,8 @@ app.get('/api/insta', (req,res)=>{
     console.log('hit')
     res.status(200).send(instaPhotos)
         })
+
+
+app.get('/api/hey', (req,res)=>{
+    res.status(200).send('hello there!')
+})
