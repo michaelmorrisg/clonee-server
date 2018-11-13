@@ -18,8 +18,7 @@ app.listen(3045, ()=>{
 var instaPhotos = []
 
 function getFromInsta(){
-    const browser = puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']});
-    puppeteer.launch()
+    puppeteer.launch({args: ['--no-sandbox', '--disable-setuid-sandbox']})
     .then(function(browser){
         return browser.newPage();
     })
