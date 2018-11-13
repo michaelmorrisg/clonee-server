@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const bodyParser = require('body-parser')
 const puppeteer = require('puppeteer')
 const $ = require('cheerio')
@@ -7,6 +8,7 @@ const url = 'https://www.instagram.com/roolee/'
 const app = express()
 
 app.use(bodyParser.json())
+app.use(cors())
 
 app.listen(3045, ()=>{
     console.log('listening on port 3045')
