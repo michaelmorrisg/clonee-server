@@ -43,6 +43,8 @@ function getFromInsta(){
 getFromInsta()
 
 
+
+
 //Updates Insta Photos every half hour
 
 setInterval(getFromInsta,600000)
